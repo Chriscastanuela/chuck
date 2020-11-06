@@ -4,6 +4,7 @@ import Footer from '../Footer/Footer';
 import React, { Component } from 'react'
 import { getJoke } from '../../APIcalls/Get-Joke';
 import Header from '../Header/Header'
+import JokeDiv from '../JokeDiv/JokeDiv';
 
 export default class App extends Component {
   constructor() {
@@ -21,13 +22,13 @@ export default class App extends Component {
       return this.state.joke.value.joke
     } else {
       return 'Loading'
-      //{this.checkForJoke()}
     }
   }
   render() {
     return (
       <div className="App">
         <Header/>
+        <JokeDiv checkForJoke={() => this.checkForJoke()}/>
         <Footer/>
       </div>
     );
