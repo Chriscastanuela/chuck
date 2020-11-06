@@ -3,7 +3,7 @@ import './Joke-Div.scss'
 
 export default function JokeDiv(props) {
     return (
-        <div className=''>
+        <div className='joke-section'>
             {props.checkForJoke()}
         </div>
     )

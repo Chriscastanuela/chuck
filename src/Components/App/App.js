@@ -1,4 +1,5 @@
 import logo from '../../logo.svg';
+import loading from '../../Assets/loading.png';
 import './App.scss';
 import Footer from '../Footer/Footer';
 import React, { Component } from 'react'
@@ -31,7 +32,7 @@ export default class App extends Component {
         return theQuote;
       }
     } else {
-      return 'Loading'
+      return <img src={loading} alt="loading image" className='loading'/>
     }
   }
   render() {
