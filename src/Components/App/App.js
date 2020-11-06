@@ -1,8 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import Footer from './Components/Footer/Footer';
+import Footer from '../Footer/Footer';
+import React, { Component } from 'react'
+import { getJoke } from '../../APIcalls/APIcalls'
 
-export default class App {
+export default class App extends Component {
   constructor() {
     super()
     this.state = {
@@ -34,10 +36,10 @@ export default class App {
             Learn React
           </a>
         </header>
-        <Footer></Footer>
+        {/* <Footer></Footer> */}
       </div>
     );
   }
 }
 
-export default App;
+// export default App;
