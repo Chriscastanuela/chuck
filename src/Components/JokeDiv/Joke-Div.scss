@@ -1,3 +1,37 @@
 .joke-section {
     height: 610px;
+    place-content: center;
+}
+// .thumbs {
+//     display: contents;
+//     display: inline-block;
+// }
+.joke-div {
+    width: 50%;
+    border: solid 2px black;
+    border-radius: 5px;
+    display: contents;
+    display: inline-block;
+    place-self: center;
+    margin-left: 25%;
+    margin-top: 15%;
+}
+.thumbs {
+    display: contents;
+    display: inline-block;
+    margin-top: 1vw;
+}
+#left {
+    margin-left: 1vw;
+}
+#right {
+    margin-right: 1vw;
+    float: right;
+}
+.joke {
+    margin-left: 25%;
+    cursor: pointer;
+    width: 50vh;
+    border: solid 2px black;
+    border-radius: 2%;
 }
