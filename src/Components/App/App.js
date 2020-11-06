@@ -1,8 +1,8 @@
-import logo from './logo.svg';
+import logo from '../../logo.svg';
 import './App.css';
 import Footer from '../Footer/Footer';
 import React, { Component } from 'react'
-import { getJoke } from '../../APIcalls/APIcalls'
+import { getJoke } from '../../APIcalls/Get-Joke';
 
 export default class App extends Component {
   constructor() {
@@ -11,12 +11,16 @@ export default class App extends Component {
       joke: {}
     }
   }
+  componentDidMount() {
+    getJoke()
+    .then(res => this.setState({joke: res}))
+  }
   checkForJoke = () => {
     if (this.state.joke.value) {
       return this.state.joke.value.joke
     } else {
       return 'Loading'
-      // {this.checkForJoke()}
+      //{this.checkForJoke()}
     }
   }
   render() {
@@ -36,10 +40,8 @@ export default class App extends Component {
             Learn React
           </a>
         </header>
-        {/* <Footer></Footer> */}
+        <Footer/>
       </div>
     );
   }
 }
-
-// export default App;
