@@ -1,5 +1,5 @@
 import logo from '../../logo.svg';
-import './App.css';
+import './App.scss';
 import Footer from '../Footer/Footer';
 import React, { Component } from 'react'
 import { getJoke } from '../../APIcalls/Get-Joke';
@@ -13,13 +13,23 @@ export default class App extends Component {
       joke: {}
     }
   }
+  decodeHtml = (html) => {
+    let areaElement = document.createElement("textarea");
+    areaElement.innerHTML = html;
+    return areaElement.value;
+  }
   componentDidMount() {
     getJoke()
     .then(res => this.setState({joke: res}))
   }
   checkForJoke = () => {
     if (this.state.joke.value) {
-      return this.state.joke.value.joke
+      let theQuote = this.state.joke.value.joke;
+      if (theQuote.includes('&quot;')) {
+        return this.decodeHtml(theQuote);
+      } else {
+        return theQuote;
+      }
     } else {
       return 'Loading'
     }

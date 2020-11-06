@@ -1,15 +1,18 @@
-.footer {
+.footer-body {
     background-color: #34425A;
     align-content: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 5vw;
 }
-.title {
+.footer-title {
     margin: 0;
     margin-left: 2vw;
     color: #DEEEEC;
     grid-column: 1;
     align-self: center;
     cursor: pointer;
+}
+.footer-link {
+    text-decoration: none;
 }

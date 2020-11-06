@@ -3,8 +3,11 @@ import './Footer.scss'
 
 export default function Footer() {
     return (
-        <div className='footer'>
-            <h1 className='title'>Chris</h1>
+        <div className='footer-body'>
+            <a 
+            href='https://chriscastanuela.github.io/Christopher-Anthony-Castanuela/'
+            className='footer-link'
+            ><h1 className='footer-title'>Chris</h1></a>
         </div>
     )
 }
