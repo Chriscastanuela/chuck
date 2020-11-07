@@ -1,4 +1,40 @@
 .main-section {
     background-color: #FFFFFF;
     height: 626px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 
+    1fr 1fr 1fr 1fr 1fr 
+    1fr 1fr 1fr 1fr 1fr
+    1fr 1fr 1fr 1fr 1fr
+    1fr 1fr 1fr 1fr 1fr
+    1fr 1fr 1fr 1fr 1fr
+    1fr 1fr 1fr 1fr 1fr
+    1fr 1fr 1fr 1fr 1fr
+    1fr 1fr 1fr 1fr 1fr
+    1fr 1fr 1fr 1fr 1fr
+    1fr 1fr 1fr 1fr 1fr
+    1fr 1fr 1fr 1fr 1fr
+    1fr 1fr 1fr 1fr 1fr
+    1fr 1fr 1fr 1fr 1fr
+    1fr 1fr 1fr 1fr 1fr
+    1fr 1fr 1fr 1fr 1fr
+    1fr 1fr 1fr 1fr 1fr
+    1fr 1fr 1fr 1fr 1fr
+    1fr 1fr 1fr 1fr 1fr
+    1fr 1fr 1fr 1fr 1fr
+    1fr 1fr 1fr 1fr 1fr;
+    place-content: center;
+    margin: 0;
+    overflow-y: scroll;
+}
+.give-me-one {
+    // margin-right: 2vw;
+    cursor: pointer;
+    // height: 20%;
+    // float: right;
+    // margin-top: .75vw;
+    font-size: xx-large;
+    color: #34435A;
 }

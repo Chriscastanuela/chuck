@@ -1,20 +1,21 @@
-.joke-section {
-    height: 610px;
-    place-content: center;
+.joke {
+    place-self: center;
 }
 // .thumbs {
 //     display: contents;
 //     display: inline-block;
 // }
 .joke-div {
-    width: 30%;
+    width: 200px;
+    height: 200px;
+    overflow-y: scroll;
     border: solid 2px black;
     border-radius: 20px;
     display: contents;
     display: inline-block;
     place-self: center;
-    margin-left: 35%;
-    margin-top: 15%;
+    // margin-left: 35%;
+    // margin-top: 15%;
     background-color: #3b8b85;
     box-shadow: -1px 1px 13px 0px #282D33;
 }

@@ -16,29 +16,49 @@ export default class App extends Component {
   constructor() {
     super()
     this.state = {
-      joke: {}
+      likes: [],
+      jokes: [],
+      currentJoke: {}
     }
+  }
+  componentDidMount() {
+    setTimeout(() => {
+      getJoke()
+      .then(res => this.setState({jokes: [...[res]]}))
+      .then(res => console.log(this.state))
+    }, 100)
   }
   decodeHtml = (html) => {
     let areaElement = document.createElement("textarea");
     areaElement.innerHTML = html;
     return areaElement.value;
   }
-  componentDidMount() {
-    getJoke()
-    .then(res => this.setState({joke: res}))
-  }
   checkForJoke = () => {
-    if (this.state.joke.value) {
-      let theJoke = this.state.joke.value.joke;
-      if (theJoke.includes('&quot;')) {
-        return this.decodeHtml(theJoke);
+    if (this.state.jokes.length > 0) {
+      let theJoke = this.state.jokes[0].value[Math.floor(Math.random() * this.state.jokes[0].value.length)];
+      console.log(theJoke.joke)
+      if (theJoke.joke.includes('&quot;')) {
+        return this.decodeHtml(theJoke.joke);
       } else {
-        return <p className='the-joke'>{theJoke}</p>
+        return <p className='the-joke'>{theJoke.joke}</p>
       }
     } else {
       return <img src={loading} alt="loading image" className='loading'/>
     }
+  }
+  // sortedJokes() {
+  //   let theJokes = this.state.jokes[0].value.sort((a, b) => {
+  //     a.joke - b.joke;
+  //   })
+  // }
+  like = () => {
+    setTimeout(() => {
+      this.setState({likes: [...[this.state.joke.value]]});
+      console.log(this.state);
+      getJoke()
+      .then(res => this.setState({joke: res}))
+      console.log(this.state);
+    }, 0)
   }
   render() {
     return (
@@ -47,10 +67,14 @@ export default class App extends Component {
           <Header/>
           <Route path="/" render={props => (
             <React.Fragment>
-              <Main  checkForJoke={() => this.checkForJoke()}/>
+              <Main  
+              checkForJoke={() => this.checkForJoke()}
+              jokes={this.state.jokes}
+              like={() => this.like()}
+              />
             </React.Fragment>
           )}/>
-          <Route />
+          {/* <Route /> */}
           <Footer/>
         </div>
       </Router>
@@ -72,3 +96,10 @@ export default class App extends Component {
     Learn React
   </a>
 </header> */}
+  // getRandomArrayElement(arr) {
+  //   var min = 0;
+  //   var max = (arr.length - 1);
+  //   var randIndex = Math.floor(Math.random() * (max - min)) + min;
+  //   return arr[randIndex];
+  // }
+  // let theJoke = this.getRandomArrayElement(this.state.jokes[0].value);
