@@ -7,31 +7,37 @@
 //     display: inline-block;
 // }
 .joke-div {
-    width: 50%;
+    width: 30%;
     border: solid 2px black;
-    border-radius: 5px;
+    border-radius: 20px;
     display: contents;
     display: inline-block;
     place-self: center;
-    margin-left: 25%;
+    margin-left: 35%;
     margin-top: 15%;
 }
 .thumbs {
     display: contents;
     display: inline-block;
     margin-top: 1vw;
+    cursor: pointer;
+    border: solid .5px black;
+    border-radius: 40px;
 }
 #left {
-    margin-left: 1vw;
+    margin-left: 2vw;
 }
 #right {
-    margin-right: 1vw;
+    margin-right: 2vw;
     float: right;
 }
 .joke {
-    margin-left: 25%;
-    cursor: pointer;
-    width: 50vh;
+    margin-left: 20%;
+    margin-bottom: 3%;
+    width: 250px;
+    height: 100px;
+    overflow-y: scroll;
     border: solid 2px black;
-    border-radius: 2%;
+    border-radius: 10px;
+    place-self: center;
 }

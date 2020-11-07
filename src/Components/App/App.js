@@ -25,11 +25,11 @@ export default class App extends Component {
   }
   checkForJoke = () => {
     if (this.state.joke.value) {
-      let theQuote = this.state.joke.value.joke;
-      if (theQuote.includes('&quot;')) {
-        return this.decodeHtml(theQuote);
+      let theJoke = this.state.joke.value.joke;
+      if (theJoke.includes('&quot;')) {
+        return this.decodeHtml(theJoke);
       } else {
-        return theQuote;
+        return <p className='the-joke'>{theJoke}</p>
       }
     } else {
       return <img src={loading} alt="loading image" className='loading'/>
