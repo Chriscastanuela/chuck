@@ -15,6 +15,9 @@
     place-self: center;
     margin-left: 35%;
     margin-top: 15%;
+    // background-color: #4fb3ab;
+    background-color: #3b8b85;
+    box-shadow: -1px 1px 13px 0px #282D33;
 }
 .thumbs {
     display: contents;
@@ -22,7 +25,9 @@
     margin-top: 1vw;
     cursor: pointer;
     border: solid .5px black;
-    border-radius: 40px;
+    border-radius: 9px;
+    background-color: #DEEEEC;
+    // box-shadow: -1px 1px 13px 0px #282D33;
 }
 #left {
     margin-left: 2vw;
@@ -41,4 +46,5 @@
     border: solid 2px black;
     border-radius: 10px;
     place-self: center;
+    background-color: #DEEEEC;
 }
