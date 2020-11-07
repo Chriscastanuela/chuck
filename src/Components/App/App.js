@@ -1,11 +1,17 @@
+import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
+import React, { Component } from 'react'
+
 import logo from '../../logo.svg';
 import loading from '../../Assets/loading.png';
+
 import './App.scss';
-import Footer from '../Footer/Footer';
-import React, { Component } from 'react'
+
 import { getJoke } from '../../APIcalls/Get-Joke';
+import Footer from '../Footer/Footer';
 import Header from '../Header/Header'
 import JokeDiv from '../JokeDiv/JokeDiv';
+import Main from '../Main/Main'
+
 
 export default class App extends Component {
   constructor() {
@@ -37,11 +43,18 @@ export default class App extends Component {
   }
   render() {
     return (
-      <div className="App">
-        <Header/>
-        <JokeDiv checkForJoke={() => this.checkForJoke()}/>
-        <Footer/>
-      </div>
+      <Router>
+        <div className="App">
+          <Header/>
+          <Route path ="/" render={props => (
+            <React.Fragment>
+            <Main />
+            </React.Fragment>
+          )}/>
+          {/* <JokeDiv checkForJoke={() => this.checkForJoke()}/> */}
+          <Footer/>
+        </div>
+      </Router>
     );
   }
 }
