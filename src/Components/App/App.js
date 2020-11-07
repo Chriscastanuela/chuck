@@ -9,7 +9,6 @@ import './App.scss';
 import { getJoke } from '../../APIcalls/Get-Joke';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header'
-import JokeDiv from '../JokeDiv/JokeDiv';
 import Main from '../Main/Main'
 
 
@@ -46,12 +45,12 @@ export default class App extends Component {
       <Router>
         <div className="App">
           <Header/>
-          <Route path ="/" render={props => (
+          <Route path="/" render={props => (
             <React.Fragment>
-            <Main />
+              <Main  checkForJoke={() => this.checkForJoke()}/>
             </React.Fragment>
           )}/>
-          {/* <JokeDiv checkForJoke={() => this.checkForJoke()}/> */}
+          <Route />
           <Footer/>
         </div>
       </Router>
