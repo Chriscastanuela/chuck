@@ -12,7 +12,8 @@ export default function JokeDiv(props) {
                 <div>{props.checkForJoke()}</div> */}
                 <h1 className='thumbs' id='left'>👍</h1>
                 <h1 className='thumbs' id='right'>👎</h1>
-                <div className='joke'>{props.checkForJoke()}</div>
+                <p className='the-joke'>{props.checkForJoke()}</p>
+                {/* <div className='joke'>{props.checkForJoke()}</div> */}
             </div>
         </section>
     )
