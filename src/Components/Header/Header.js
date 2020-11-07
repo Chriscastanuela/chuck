@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <div className='header-body'>
             <a><h1 className='header-title'>Chuck Norris Jokes for the Bored</h1></a>
-            <a><h1 className='thumbs-up-list'>👍</h1></a>
+            <input type="button" className='thumbs-up-list' value="👍" /*onclick={}*//>
         </div>
     )
 }
