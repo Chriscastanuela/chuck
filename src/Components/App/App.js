@@ -2,7 +2,6 @@ import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom
 import React, { Component } from 'react'
 
 import logo from '../../logo.svg';
-import loading from '../../Assets/loading.png';
 
 import './App.scss';
 
@@ -28,11 +27,11 @@ export default class App extends Component {
       .then(res => console.log(this.state))
     }, 100)
   }
-  decodeHtml = (html) => {
-    let areaElement = document.createElement("textarea");
-    areaElement.innerHTML = html;
-    return areaElement.value;
-  }
+  // decodeHtml = (html) => {
+  //   let areaElement = document.createElement("textarea");
+  //   areaElement.innerHTML = html;
+  //   return areaElement.value;
+  // }
   checkForJoke = () => {
     if (this.state.jokes.length > 0) {
       let theJoke = this.state.jokes[0].value[Math.floor(Math.random() * this.state.jokes[0].value.length)];
@@ -46,11 +45,6 @@ export default class App extends Component {
       return <img src={loading} alt="loading image" className='loading'/>
     }
   }
-  // sortedJokes() {
-  //   let theJokes = this.state.jokes[0].value.sort((a, b) => {
-  //     a.joke - b.joke;
-  //   })
-  // }
   like = () => {
     setTimeout(() => {
       this.setState({likes: [...[this.state.joke.value]]});
