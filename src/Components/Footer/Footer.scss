@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 .footer-body {
     background-color: #34425A;
     height: 5vw;
@@ -6,11 +8,7 @@
     color: #34425A;
     font-size: x-large;
     font-family: 'Roboto', sans-serif;
-    margin-left: 2vw;
-    margin-top: 1vw;
-    cursor: pointer;
-    display: contents;
-    display: inline-block;
+    @include headerAndFooter;
 }
 .footer-link {
     text-decoration: none;

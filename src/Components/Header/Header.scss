@@ -1,15 +1,13 @@
+@import '../variables.scss';
+
 .header-body {
     background-color: #34425A;
     height: 5vw;
 }
 .header-title {
-    margin-left: 2vw;
-    margin-top: 1vw;
     margin-bottom: 0;
     color: #DEEEEC;
-    cursor: pointer;
-    display: contents;
-    display: inline-block;
+    @include headerAndFooter;
 }
 .thumbs-up-list {
     justify-self: end;

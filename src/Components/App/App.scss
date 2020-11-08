@@ -7,10 +7,6 @@
   height: 7vmin;
   pointer-events: none;
 }
-.the-joke {
-  place-self: center;
-  font-family: 'Noto Sans JP', sans-serif;
-}
 @media (prefers-reduced-motion: no-preference) {
   .loading {
     animation: loading-spin infinite 4s linear;
