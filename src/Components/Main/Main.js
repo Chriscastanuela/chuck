@@ -11,7 +11,6 @@ export default function Main(props) {
         let sortedJokes = props.jokes[0].value.sort((a, b) => {
             return a.joke.localeCompare(b.joke)
         })
-        console.log("Main -> sortedJokes", sortedJokes)
         return (
             <div className='main-section'>
                 {

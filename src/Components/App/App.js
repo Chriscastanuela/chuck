@@ -16,14 +16,12 @@ export default class App extends Component {
     this.state = {
       likes: [],
       jokes: [],
-      currentJoke: {}
     }
   }
   componentDidMount() {
     setTimeout(() => {
       getJokes()
       .then(res => this.setState({jokes: [...[res]]}))
-      .then(res => console.log(this.state))
     }, 100)
   }
   decodeHtml = (html) => {
@@ -34,7 +32,6 @@ export default class App extends Component {
   like = (joke) => {
     setTimeout(() => {
       this.setState({likes: [...this.state.likes, joke]});
-      console.log(this.state);
     }, 0)
   }
   dislike = (joke) => {
