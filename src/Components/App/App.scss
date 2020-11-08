@@ -7,16 +7,16 @@
   height: 7vmin;
   pointer-events: none;
 }
-// @media (prefers-reduced-motion: no-preference) {
-//   .loading {
-//     animation: loading-spin infinite 4s linear;
-//   }
-// }
-// @keyframes loading-spin {
-//   from {
-//     transform: rotate(0deg);
-//   }
-//   to {
-//     transform: rotate(360deg);
-//   }
-// }
+@media (prefers-reduced-motion: no-preference) {
+  .loading {
+    animation: loading-spin infinite 4s linear;
+  }
+}
+@keyframes loading-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
