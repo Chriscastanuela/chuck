@@ -1,10 +1,10 @@
-// import './Likes.scss'
+import './Likes.scss'
 
-// import React, { Component } from 'react'
+import React, { Component } from 'react'
 
-// import chuck from '../../Assets/chuck.jpeg';
+import chuck from '../../Assets/chuck.jpeg';
 
-// import JokeDiv from '../JokeDiv/JokeDiv';
+import JokeDiv from '../JokeDiv/JokeDiv';
 
 
 // export default function Likes(props) {
