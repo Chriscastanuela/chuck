@@ -1,18 +1,18 @@
 .joke {
     place-self: center;
 }
-// .joke-div {
-//     width: 200px;
-//     height: 200px;
-//     overflow-y: scroll;
-//     border: solid 2px black;
-//     border-radius: 20px;
-//     display: contents;
-//     display: inline-block;
-//     place-self: center;
-//     background-color: #3b8b85;
-//     box-shadow: -1px 1px 13px 0px #282D33;
-// }
+.joke-div {
+    width: 200px;
+    height: 200px;
+    overflow-y: scroll;
+    border: solid 2px black;
+    border-radius: 20px;
+    display: contents;
+    display: inline-block;
+    place-self: center;
+    background-color: #3b8b85;
+    box-shadow: -1px 1px 13px 0px #282D33;
+}
 // .thumbs {
 //     display: contents;
 //     display: inline-block;
