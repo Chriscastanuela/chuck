@@ -13,7 +13,7 @@ export default class JokeDiv extends Component {
             <section className='joke'>
                 <div className='joke-div'>
                     <input type="button" className='thumbs' value={'👍'} onClick={() => this.props.like(joke)} />
-                    {/* <input type="button" className='thumbs' value="👎" /> */}
+                    <input type="button" className='thumbs' value="👎" onClick={() => this.props.dislike(joke)}/>
                     <p className='the-joke'>{joke}</p>
                 </div>
             </section>

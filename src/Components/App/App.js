@@ -9,6 +9,7 @@ import { getJokes } from '../../APIcalls/Get-Jokes';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header'
 import Main from '../Main/Main'
+import Likes from '../Likes/Likes'
 
 
 export default class App extends Component {
@@ -38,22 +39,44 @@ export default class App extends Component {
       console.log(this.state);
     }, 0)
   }
+  dislike = (joke) => {
+    let newArr = [];
+    this.state.likes.forEach(i => {
+      if (i != joke) {
+        newArr.push(i)
+      }
+    })
+    setTimeout(() => {
+      this.setState({likes: newArr});
+    }, 0)
+  }
   render() {
     return (
       <Router>
         <div className="App">
           <Header/>
-          <Route path="/" render={props => (
+          <Route exact path="/" render={props => (
             <React.Fragment>
               <Main
               jokes={this.state.jokes}
               like={this.like}
+              dislike={this.dislike}
               />
             </React.Fragment>
           )}/>
+          <Route
+          path='/likes'
+          render={props => (
+            <Likes
+            likes={this.state.likes}
+            like={this.like}
+            dislike={this.dislike}
+            />
+          )}
+          />
           <Footer/>
         </div>
       </Router>
     );
   }
-} 
+}

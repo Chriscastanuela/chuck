@@ -21,9 +21,9 @@ export default function Main(props) {
                         return (
                             <JokeDiv 
                             id={theKey}
-                            jokes={props.jokes}
                             theJoke={element.joke}
                             like={props.like}
+                            dislike={props.dislike}
                             />
                         )
                     })
