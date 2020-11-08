@@ -20,6 +20,7 @@ export default function Main(props) {
                         theKey += 1;
                         return (
                             <JokeDiv 
+                            decodeHtml={props.decodeHtml}
                             id={theKey}
                             theJoke={element.joke}
                             like={props.like}

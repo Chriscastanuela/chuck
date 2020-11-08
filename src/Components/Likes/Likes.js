@@ -22,6 +22,7 @@ export default class Likes extends Component {
                             theKey += 1;
                             return (
                                 <JokeDiv 
+                                decodeHtml={this.props.decodeHtml}
                                 id={theKey}
                                 theJoke={element}
                                 dislike={this.props.dislike}

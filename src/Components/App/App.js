@@ -58,6 +58,7 @@ export default class App extends Component {
           <Route exact path="/" render={props => (
             <React.Fragment>
               <Main
+              decodeHtml={this.decodeHtml}
               jokes={this.state.jokes}
               like={this.like}
               isMain={true}
@@ -68,6 +69,7 @@ export default class App extends Component {
           path='/likes'
           render={props => (
             <Likes
+            decodeHtml={this.decodeHtml}
             likes={this.state.likes}
             dislike={this.dislike}
             isLikes={true}
