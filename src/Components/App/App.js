@@ -32,6 +32,7 @@ export default class App extends Component {
   like = (joke) => {
     setTimeout(() => {
       this.setState({likes: [...this.state.likes, joke]});
+      console.log(this.state);
     }, 0)
   }
   dislike = (joke) => {
@@ -71,6 +72,9 @@ export default class App extends Component {
             />
           )}
           />
+          <Switch>
+            <Redirect to='/'/>
+          </Switch>
           <Footer/>
         </div>
       </Router>
