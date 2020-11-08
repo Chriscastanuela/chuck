@@ -1,5 +1,5 @@
 import './Joke-Div.scss'
-import React, { Component } from 'react'
+import React from 'react'
 
 export default function JokeDiv(props) {
     let joke = props.decodeHtml(props.theJoke);

@@ -1,6 +1,5 @@
 import React from 'react';
 import './Main.scss';
-import JokeSection from '../Joke-Section/JokeSection';
 import JokeDiv from '../JokeDiv/JokeDiv';
 import loading from '../../Assets/loading.png';
 
