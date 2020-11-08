@@ -1,22 +1,22 @@
-.App {
-  margin: 0;
-  height: 100%;
-  padding: 0;
-}
-.loading {
-  height: 7vmin;
-  pointer-events: none;
-}
-@media (prefers-reduced-motion: no-preference) {
-  .loading {
-    animation: loading-spin infinite 4s linear;
-  }
-}
-@keyframes loading-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+// .App {
+//   margin: 0;
+//   height: 100%;
+//   padding: 0;
+// }
+// .loading {
+//   height: 7vmin;
+//   pointer-events: none;
+// }
+// @media (prefers-reduced-motion: no-preference) {
+//   .loading {
+//     animation: loading-spin infinite 4s linear;
+//   }
+// }
+// @keyframes loading-spin {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }
