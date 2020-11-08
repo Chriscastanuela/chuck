@@ -29,12 +29,12 @@ export default class App extends Component {
     areaElement.innerHTML = html;
     return areaElement.value;
   }
-//   like = (joke) => {
-//     setTimeout(() => {
-//       this.setState({likes: [...this.state.likes, joke]});
-//       console.log(this.state);
-//     }, 0)
-//   }
+  like = (joke) => {
+    setTimeout(() => {
+      this.setState({likes: [...this.state.likes, joke]});
+      console.log(this.state);
+    }, 0)
+  }
 //   dislike = (joke) => {
 //     let newArr = [];
 //     this.state.likes.forEach(i => {
