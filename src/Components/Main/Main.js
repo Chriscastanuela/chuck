@@ -1,7 +1,7 @@
-// import React from 'react';
-// import './Main.scss';
-// import JokeDiv from '../JokeDiv/JokeDiv';
-// import loading from '../../Assets/loading.png';
+import React from 'react';
+import './Main.scss';
+import JokeDiv from '../JokeDiv/JokeDiv';
+import loading from '../../Assets/loading.png';
 
 // export default function Main(props) {
 //     if (props.jokes.length > 0) {
