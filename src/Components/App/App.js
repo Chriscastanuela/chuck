@@ -10,14 +10,14 @@ import Main from '../Main/Main'
 import Likes from '../Likes/Likes'
 
 
-// export default class App extends Component {
-//   constructor() {
-//     super()
-//     this.state = {
-//       likes: [],
-//       jokes: [],
-//     }
-//   }
+export default class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+      likes: [],
+      jokes: [],
+    }
+  }
 //   componentDidMount() {
 //     setTimeout(() => {
 //       getJokes()
@@ -80,4 +80,4 @@ import Likes from '../Likes/Likes'
 //       </Router>
 //     );
 //   }
-// }
+}
