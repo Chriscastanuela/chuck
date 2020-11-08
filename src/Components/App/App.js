@@ -35,17 +35,17 @@ export default class App extends Component {
       console.log(this.state);
     }, 0)
   }
-//   dislike = (joke) => {
-//     let newArr = [];
-//     this.state.likes.forEach(i => {
-//       if (i != joke) {
-//         newArr.push(i)
-//       }
-//     })
-//     setTimeout(() => {
-//       this.setState({likes: newArr});
-//     }, 0)
-//   }
+  dislike = (joke) => {
+    let newArr = [];
+    this.state.likes.forEach(i => {
+      if (i != joke) {
+        newArr.push(i)
+      }
+    })
+    setTimeout(() => {
+      this.setState({likes: newArr});
+    }, 0)
+  }
 //   render() {
 //     return (
 //       <Router>
