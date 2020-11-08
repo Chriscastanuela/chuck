@@ -23,7 +23,7 @@ export default function Main(props) {
                             id={theKey}
                             theJoke={element.joke}
                             like={props.like}
-                            dislike={props.dislike}
+                            isMain={props.isMain}
                             />
                         )
                     })

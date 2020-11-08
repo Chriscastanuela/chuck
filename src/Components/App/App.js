@@ -60,7 +60,7 @@ export default class App extends Component {
               <Main
               jokes={this.state.jokes}
               like={this.like}
-              dislike={this.dislike}
+              isMain={true}
               />
             </React.Fragment>
           )}/>
@@ -69,8 +69,8 @@ export default class App extends Component {
           render={props => (
             <Likes
             likes={this.state.likes}
-            like={this.like}
             dislike={this.dislike}
+            isLikes={true}
             />
           )}
           />

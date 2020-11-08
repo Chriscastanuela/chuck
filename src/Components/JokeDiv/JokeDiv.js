@@ -9,14 +9,24 @@ export default class JokeDiv extends Component {
     }
     render(props) {
         let joke = this.decodeHtml(this.props.theJoke);
-        return (
-            <section className='joke'>
-                <div className='joke-div'>
-                    <input type="button" className='thumbs' value='👍' onClick={() => this.props.like(joke)} />
-                    <input type="button" className='thumbs' value="👎" onClick={() => this.props.dislike(joke)}/>
-                    <p className='the-joke'>{joke}</p>
-                </div>
-            </section>
-        )
+        if (this.props.isMain) {
+            return (
+                <section className='joke'>
+                    <div className='joke-div'>
+                        <input type="button" className='thumbs' value='👍' onClick={() => this.props.like(joke)} />
+                        <p className='the-joke'>{joke}</p>
+                    </div>
+                </section>
+            )
+        } else {
+            return (
+                <section className='joke'>
+                    <div className='joke-div'>
+                        <input type="button" className='thumbs' value="👎" onClick={() => this.props.dislike(joke)}/>
+                        <p className='the-joke'>{joke}</p>
+                    </div>
+                </section>
+            )
+        }
     }
 }

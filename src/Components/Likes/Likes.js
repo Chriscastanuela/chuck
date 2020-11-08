@@ -2,7 +2,6 @@ import './Likes.scss'
 
 import React, { Component } from 'react'
 
-import loading from '../../Assets/loading.png';
 import chuck from '../../Assets/chuck.jpeg';
 
 import JokeDiv from '../JokeDiv/JokeDiv';
@@ -25,8 +24,8 @@ export default class Likes extends Component {
                                 <JokeDiv 
                                 id={theKey}
                                 theJoke={element}
-                                like={this.props.like}
                                 dislike={this.props.dislike}
+                                isLikes={this.props.isLikes}
                                 />
                             )
                         })
