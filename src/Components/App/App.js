@@ -46,38 +46,38 @@ export default class App extends Component {
       this.setState({likes: newArr});
     }, 0)
   }
-//   render() {
-//     return (
-//       <Router>
-//         <div className="App">
-//           <Header/>
-//           <Route exact path="/" render={props => (
-//             <React.Fragment>
-//               <Main
-//               decodeHtml={this.decodeHtml}
-//               jokes={this.state.jokes}
-//               like={this.like}
-//               isMain={true}
-//               />
-//             </React.Fragment>
-//           )}/>
-//           <Route
-//           path='/likes'
-//           render={props => (
-//             <Likes
-//             decodeHtml={this.decodeHtml}
-//             likes={this.state.likes}
-//             dislike={this.dislike}
-//             isLikes={true}
-//             />
-//           )}
-//           />
-//           <Switch>
-//             <Redirect to='/'/>
-//           </Switch>
-//           <Footer/>
-//         </div>
-//       </Router>
-//     );
-//   }
+  render() {
+    return (
+      <Router>
+        <div className="App">
+          <Header/>
+          <Route exact path="/" render={props => (
+            <React.Fragment>
+              <Main
+              decodeHtml={this.decodeHtml}
+              jokes={this.state.jokes}
+              like={this.like}
+              isMain={true}
+              />
+            </React.Fragment>
+          )}/>
+          <Route
+          path='/likes'
+          render={props => (
+            <Likes
+            decodeHtml={this.decodeHtml}
+            likes={this.state.likes}
+            dislike={this.dislike}
+            isLikes={true}
+            />
+          )}
+          />
+          <Switch>
+            <Redirect to='/'/>
+          </Switch>
+          <Footer/>
+        </div>
+      </Router>
+    );
+  }
 }
