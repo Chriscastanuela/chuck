@@ -18,12 +18,12 @@ export default class App extends Component {
       jokes: [],
     }
   }
-//   componentDidMount() {
-//     setTimeout(() => {
-//       getJokes()
-//       .then(res => this.setState({jokes: [...[res]]}))
-//     }, 100)
-//   }
+  componentDidMount() {
+    setTimeout(() => {
+      getJokes()
+      .then(res => this.setState({jokes: [...[res]]}))
+    }, 100)
+  }
 //   decodeHtml = (html) => {
 //     let areaElement = document.createElement("textarea");
 //     areaElement.innerHTML = html;
