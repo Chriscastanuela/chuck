@@ -7,7 +7,7 @@ export default function Footer() {
             <a 
             href='https://chriscastanuela.github.io/Christopher-Anthony-Castanuela/'
             className='footer-link'
-            ><input type="button" className='footer-title' value="Chris" /*onclick={}*//></a>
+            ><input type="button" className='footer-title' value="Author"/></a>
         </div>
     )
 }

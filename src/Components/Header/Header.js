@@ -9,7 +9,7 @@ export default function Header() {
                 <a><h1 className='header-title'>Chuck Norris Jokes for the Bored</h1></a>
             </NavLink>
             <NavLink to="/likes">
-                <input type="button" className='thumbs-up-list' value="👍" /*onclick={}*//>
+                <input type="button" className='thumbs-up-list' value="👍" />
             </NavLink>
         </div>
     )
