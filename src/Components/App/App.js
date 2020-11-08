@@ -24,11 +24,11 @@ export default class App extends Component {
       .then(res => this.setState({jokes: [...[res]]}))
     }, 100)
   }
-//   decodeHtml = (html) => {
-//     let areaElement = document.createElement("textarea");
-//     areaElement.innerHTML = html;
-//     return areaElement.value;
-//   }
+  decodeHtml = (html) => {
+    let areaElement = document.createElement("textarea");
+    areaElement.innerHTML = html;
+    return areaElement.value;
+  }
 //   like = (joke) => {
 //     setTimeout(() => {
 //       this.setState({likes: [...this.state.likes, joke]});
