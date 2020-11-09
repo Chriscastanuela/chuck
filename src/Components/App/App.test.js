@@ -19,13 +19,13 @@ let jokes = [
 
 describe('Main', () => {
   describe('Components', () => {
-    it('should have a header', () => {
+    it('1. should have a header', () => {
       render(<App jokes={jokes} likes={jokes}/>);
       
       expect(screen.getByText('Chuck Norris Jokes for the Bored')).toBeInTheDocument();
       expect(screen.getByText('👍')).toBeInTheDocument();
     });
-    it('should have a footer', () => {
+    it('2. should have a footer', () => {
       render(<App />);
       
       expect(screen.getByText('Author')).toBeInTheDocument();
