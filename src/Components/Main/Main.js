@@ -25,6 +25,11 @@ export default function Main(props) {
             </div>
         )
     } else {
-        return <img src={loading} alt="loading image" className='loading'/>
+        return (
+            <div>
+                <h5 className='loading-message'>Loading</h5>
+                <img src={loading} alt="loading image" className='loading'/>
+            </div>
+        ) 
     }
 }
