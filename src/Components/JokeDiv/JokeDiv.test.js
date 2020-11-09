@@ -119,24 +119,24 @@ describe('Likes Page', () => {
         expect(screen.getByText('funny')).toBeInTheDocument();
         });
     });
-//     describe('Functionality', () => {
-//         it('3. should have button click functionality', () => {
-//             render(
-//                 <BrowserRouter>
-//                     <JokeDiv
-//                     isMain={true}
-//                     theJoke={'funny'}
-//                     like={like}
-//                     decodeHtml={
-//                         (param) => {
-//                             return param;
-//                         }
-//                     }
-//                     />
-//                 </BrowserRouter>
-//             );
-//             userEvent.click(screen.getByText('👍'));
-//             expect(like).toHaveBeenCalled();
-//         })
-//     })
+    describe('Functionality', () => {
+        it('3. should have button click functionality', () => {
+            render(
+                <BrowserRouter>
+                    <JokeDiv
+                    isMain={true}
+                    theJoke={'funny'}
+                    like={like}
+                    decodeHtml={
+                        (param) => {
+                            return param;
+                        }
+                    }
+                    />
+                </BrowserRouter>
+            );
+            userEvent.click(screen.getByText('👍'));
+            expect(like).toHaveBeenCalled();
+        })
+    })
 });
