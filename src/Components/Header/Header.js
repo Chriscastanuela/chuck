@@ -6,7 +6,7 @@ export default function Header() {
     return (
         <div className='header-body'>
             <NavLink to="/">
-                <a><h1 className='header-title'>Chuck Norris Jokes for the Bored</h1></a>
+                <h1 className='header-title'>Chuck Norris Jokes for the Bored</h1>
             </NavLink>
             <NavLink to="/likes">
                 <input type="button" className='thumbs-up-list' value="👍" />
