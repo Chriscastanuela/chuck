@@ -54,4 +54,24 @@ describe('With Jokes', () => {
             expect(screen.getByText('funny')).toBeInTheDocument();
         })
     })
+    describe('Functionality', () => {
+        it('3. should have button click functionality', () => {
+            render(
+                <BrowserRouter>
+                    <Main
+                    decodeHtml={
+                        (param) => {
+                            return param;
+                        }
+                    }
+                    jokes={jokes}
+                    like={like}
+                    isMain={true}
+                    />
+                </BrowserRouter>
+            )
+            userEvent.click(screen.getByText('👍'));
+            expect(like).toHaveBeenCalledWith('funny')
+        })
+    })
 })
