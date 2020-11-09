@@ -8,6 +8,7 @@ import JokeDiv from '../JokeDiv/JokeDiv';
 
 
 export default function Likes(props) {
+    let theKey = 0;
     if (props.likes.length > 0) {
         let sortedJokes = props.likes.sort((a, b) => {
             return a.localeCompare(b)
@@ -16,8 +17,10 @@ export default function Likes(props) {
             <div className='likes-section'>
                 {
                     sortedJokes.map(element => {
+                        theKey += 1;
                         return (
-                            <JokeDiv 
+                            <JokeDiv
+                            key={theKey} 
                             decodeHtml={props.decodeHtml}
                             theJoke={element}
                             dislike={props.dislike}
