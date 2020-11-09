@@ -100,24 +100,24 @@ describe('Likes Page', () => {
         expect(screen.getByText('funny')).toBeInTheDocument();
         });
 
-//         it('2. should have a joke', () => {
-//             render(
-//                 <BrowserRouter>
-//                     <JokeDiv
-//                     isMain={true}
-//                     theJoke={'funny'}
-//                     like={like}
-//                     decodeHtml={
-//                         (param) => {
-//                             return param;
-//                         }
-//                     }
-//                     />
-//                 </BrowserRouter>
-//             );
+        it('2. should have a joke', () => {
+            render(
+                <BrowserRouter>
+                    <JokeDiv
+                    isMain={true}
+                    theJoke={'funny'}
+                    like={like}
+                    decodeHtml={
+                        (param) => {
+                            return param;
+                        }
+                    }
+                    />
+                </BrowserRouter>
+            );
         
-//         expect(screen.getByText('funny')).toBeInTheDocument();
-//         });
+        expect(screen.getByText('funny')).toBeInTheDocument();
+        });
     });
 //     describe('Functionality', () => {
 //         it('3. should have button click functionality', () => {
