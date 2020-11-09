@@ -21,7 +21,10 @@ export default class App extends Component {
   componentDidMount() {
     setTimeout(() => {
       getJokes()
-      .then(res => this.setState({jokes: [...[res]]}))
+      .then(res => (
+        this.setState({jokes: [...[res]]}),
+        console.log(this.state)
+      ) )
     }, 100)
   }
   decodeHtml = (html) => {
