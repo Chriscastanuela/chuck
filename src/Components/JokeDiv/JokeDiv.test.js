@@ -78,27 +78,27 @@ describe('Main Page', () => {
         })
     })
 });
-// describe('Likes Page', () => {
-//     describe('Renders', () => {
-//         it('1. should have a thumbs down button', () => {
-//         render(
-//             <BrowserRouter>
-//                 <JokeDiv
-//                 isLikes={true}
-//                 theJoke={jokes[0].value[0].joke}
-//                 like={like}
-//                 decodeHtml={
-//                     (param) => {
-//                         return param;
-//                     }
-//                 }
-//                 />
-//             </BrowserRouter>
-//         );
+describe('Likes Page', () => {
+    describe('Renders', () => {
+        it('1. should have a thumbs down button', () => {
+        render(
+            <BrowserRouter>
+                <JokeDiv
+                isLikes={true}
+                theJoke={jokes[0].value[0].joke}
+                like={like}
+                decodeHtml={
+                    (param) => {
+                        return param;
+                    }
+                }
+                />
+            </BrowserRouter>
+        );
         
-//         expect(screen.getByText('👎')).toBeInTheDocument();
-//         expect(screen.getByText('funny')).toBeInTheDocument();
-//         });
+        expect(screen.getByText('👎')).toBeInTheDocument();
+        expect(screen.getByText('funny')).toBeInTheDocument();
+        });
 
 //         it('2. should have a joke', () => {
 //             render(
@@ -118,7 +118,7 @@ describe('Main Page', () => {
         
 //         expect(screen.getByText('funny')).toBeInTheDocument();
 //         });
-//     });
+    });
 //     describe('Functionality', () => {
 //         it('3. should have button click functionality', () => {
 //             render(
@@ -139,4 +139,4 @@ describe('Main Page', () => {
 //             expect(like).toHaveBeenCalled();
 //         })
 //     })
-// });
+});
