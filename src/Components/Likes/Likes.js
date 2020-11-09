@@ -8,10 +8,10 @@ import JokeDiv from '../JokeDiv/JokeDiv';
 
 
 export default function Likes(props) {
-    let sortedJokes = props.likes.sort((a, b) => {
-        return a.localeCompare(b)
-    });
     if (props.likes.length > 0) {
+        let sortedJokes = props.likes.sort((a, b) => {
+            return a.localeCompare(b)
+        });
         return (
             <div className='likes-section'>
                 {
@@ -32,7 +32,11 @@ export default function Likes(props) {
         return  (
             <div>
                 <h1 className='likes-header'>You have no likes</h1>
-                <img src={chuck} alt="loading image" className='chuck'/>
+                <img 
+                src={chuck} 
+                alt="loading image" 
+                className='chuck'
+                />
             </div>
         )
     }

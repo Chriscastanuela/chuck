@@ -7,7 +7,8 @@ export default function JokeDiv(props) {
         return (
             <section className='joke'>
                 <div className='joke-div'>
-                    <input type="button" className='thumbs' value='👍' onClick={() => props.like(joke)} />
+                    <input type="button" className='thumbs' value='👍' onClick={() => props.like(joke)} 
+                    />
                     <p className='the-joke'>{joke}</p>
                 </div>
             </section>
