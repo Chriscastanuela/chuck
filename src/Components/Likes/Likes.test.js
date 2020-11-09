@@ -12,7 +12,7 @@ let mockedDislike = jest.fn();
 
 describe('No likes', () => {
     describe('Render', () => {
-        it('should render an image and a header', () => {
+        it('1. should render an image and a header', () => {
             render(
                 <BrowserRouter>
                     <Likes 
@@ -26,7 +26,7 @@ describe('No likes', () => {
 })
 describe('With likes', () => {
     describe('Render', () => {
-        it('should render joke divs', () => {
+        it('2. should render joke divs', () => {
             render(
                 <BrowserRouter>
                     <Likes 
@@ -45,5 +45,24 @@ describe('With likes', () => {
             expect(screen.getByText('funny')).toBeInTheDocument();
         })
     })
-
+    describe('Functionality', () => {
+        it('3. should have button click functionality', () => {
+            render(
+                <BrowserRouter>
+                    <Likes 
+                        likes={jokes}
+                        dislike={mockedDislike}
+                        isLikes={true}
+                        decodeHtml={
+                            (param) => {
+                                return param;
+                            }
+                        }
+                    />
+                </BrowserRouter>
+            )
+            userEvent.click(screen.getByText('👎'));
+            expect(mockedDislike).toHaveBeenCalled()
+        })
+    })
 })
