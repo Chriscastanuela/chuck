@@ -52,6 +52,9 @@
     <li>Run `npm start`</li>
 </ul>
 
+# Wireframe
+<img width="1396" alt="wireframe" src="https://user-images.githubusercontent.com/62910433/98612974-9be60c00-22b2-11eb-8374-af7bb9260d8d.png">
+
 # Final Version
 ![chuck-gif](https://user-images.githubusercontent.com/62910433/98609708-2591db80-22ab-11eb-82da-786631228491.gif)
 
