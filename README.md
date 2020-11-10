@@ -53,7 +53,7 @@
 </ul>
 
 # Wireframe
-<img width="1397" alt="Screen Shot 2020-11-10 at 7 19 14 AM" src="https://user-images.githubusercontent.com/62910433/98685850-1f404580-2325-11eb-8567-7d4c884b39bf.png">
+<img width="1393" alt="Screen Shot 2020-11-10 at 7 22 53 AM" src="https://user-images.githubusercontent.com/62910433/98686241-8e1d9e80-2325-11eb-9c01-eaaa6d347165.png">
 
 # Final Version
 ![chuck-gif](https://user-images.githubusercontent.com/62910433/98609708-2591db80-22ab-11eb-82da-786631228491.gif)
