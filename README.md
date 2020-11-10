@@ -63,15 +63,12 @@
 <a name="successes"></a>
 
 [Back to Main](#mainContents)
+The site is able to do the following:
 <ul>
-    <li>The site is able to do the following:
-        <ul>
-            <li>Fetch jokes from an external API</li>
-            <li>Add to a list of "liked" jokes when on the Main page</li>
-            <li>Render a thumbs down button on each div when navigated to the "Likes" page and use said button to remove a joke from the Likes list</li>
-            <li>Fetch jokes from an external API</li>
-            <li>Utilize React Router to go to different pages, application goes to homepage when undefined routes are attempted.</li>
-        </ul>
+    <li>Fetch jokes from an external API</li>
+    <li>Add to a list of "liked" jokes when on the Main page</li>
+    <li>Render a thumbs down button on each div when navigated to the "Likes" page and use said button to remove a joke from the Likes list</li>
+    <li>Utilize React Router to go to different pages, application goes to homepage when undefined routes are attempted.</li>
 </ul>
 
 # What I Enjoyed The Most
