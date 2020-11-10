@@ -2,6 +2,7 @@ import React from 'react';
 import './Main.scss';
 import JokeDiv from '../JokeDiv/JokeDiv';
 import loading from '../../Assets/loading.png';
+import PropTypes from 'prop-types';
 
 export default function Main(props) {
     let theKey = 0;
@@ -31,8 +32,9 @@ export default function Main(props) {
         return (
             <div>
                 <h5 className='loading-message'>Loading</h5>
-                <img src={loading} alt="loading image" className='loading'/>
+                <img src={loading} alt="loading" className='loading'/>
             </div>
         ) 
     }
 }
+

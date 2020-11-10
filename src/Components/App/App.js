@@ -41,7 +41,7 @@ export default class App extends Component {
   dislike = (joke) => {
     let newArr = [];
     this.state.likes.forEach(i => {
-      if (i != joke) {
+      if (i !== joke) {
         newArr.push(i)
       }
     })

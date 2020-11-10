@@ -37,7 +37,7 @@ export default function Likes(props) {
                 <h1 className='likes-header'>You have no likes</h1>
                 <img 
                 src={chuck} 
-                alt="loading image" 
+                alt="loading" 
                 className='chuck'
                 />
             </div>
