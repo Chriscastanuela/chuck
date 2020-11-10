@@ -62,7 +62,7 @@
 
 <a name="successes"></a>
 
-[Back to Main](#mainContents)
+[Back to Main](#mainContents)</br>
 The site is able to do the following:
 <ul>
     <li>Fetch jokes from an external API</li>
