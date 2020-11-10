@@ -1,10 +1,8 @@
 import './Likes.scss'
-
 import React, { Component } from 'react'
-
 import chuck from '../../Assets/chuck.jpeg';
-
 import JokeDiv from '../JokeDiv/JokeDiv';
+import PropTypes from 'prop-types';
 
 
 export default function Likes(props) {
@@ -44,3 +42,10 @@ export default function Likes(props) {
         )
     }
 }
+
+Main.propTypes = {
+    decodeHtml: PropTypes.func,
+    jokes: PropTypes.array,
+    dislike: PropTypes.func,
+    isLikes: PropTypes.bool,
+};
