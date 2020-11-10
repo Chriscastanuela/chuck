@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+<a name="mainContents"></a>
+# Chuck Norris
+> A js project by Chris Castanuela
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- [Link to Deployed Site]() -->
 
-## Available Scripts
+# Contents 
 
-In the project directory, you can run:
+* [About](#about)
+* [Built With](#bw)
+* [Successes](#successes)
+* [What I Enjoyed the Most](#wwetm)
+* [Link to the Author](#ltta)
 
-### `npm start`
+# About 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<a name="about"></a>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+[Back to Main](#mainContents)
+<ul>
+    <li>The Chuck Norris Project is a solo project that consisted of creating a React application using any API of my choosing. I chose to use an API that contains over 500 Chuck Norris jokes</li>
+    <li>I was given full creative control with the project's design</li>
+</ul>
 
-### `npm test`
+# Built With
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<a name="bw"></a>
 
-### `npm run build`
+[Back to Main](#mainContents)
+<ul>
+    <li>React.js</li>
+    <li>React Router</li>
+    <li>SASS/SCSS</li>
+    <li>Git/Github</li>
+    <li>Fetch API</li>
+    <li>React Testing Library</li>
+    <li>Jest</li>
+    <li>ES6 Javascript</li>
+    <li>HTML</li>
+</ul>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<a name="i"></a>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[Back to Main](#mainContents)
+<ul>
+    <li>Open your terminal</li>
+    <li>Run `git clone git@github.com:Chriscastanuela/chuck.git chris-binary`</li>
+    <li>Run `cd chris-binary`</li>
+    <li>Run `npm i`</li>
+    <li>Run `npm start`</li>
+</ul>
 
-### `npm run eject`
+# Final Version
+![chuck-gif](https://user-images.githubusercontent.com/62910433/98609708-2591db80-22ab-11eb-82da-786631228491.gif)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Successes
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<a name="successes"></a>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+[Back to Main](#mainContents)
+<ul>
+    <li>The site is able to do the following:
+        <ul>
+            <li>Fetch jokes from an external API</li>
+            <li>Add to a list of "liked" jokes when on the Main page</li>
+            <li>Render a thumbs down button on each div when navigated to the "Likes" page and use said button to remove a joke from the Likes list</li>
+            <li>Fetch jokes from an external API</li>
+            <li>Utilize React Router to go to different pages, application goes to homepage when undefined routes are attempted.</li>
+        </ul>
+</ul>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# What I Enjoyed The Most
 
-## Learn More
+<a name="wwetm"></a>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[Back to Main](#mainContents)
+<ul>
+    <li>This was a fun project to make, I would often find myself distracted by reading all of the jokes.</li>
+</ul>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Link to the Author
 
-### Code Splitting
+<a name="ltta"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+[Back to Main](#mainContents)
 
-### Analyzing the Bundle Size
+> Christopher Castanuela [here](https://chriscastanuela.github.io/Christopher-Anthony-Castanuela/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
+<!-- ### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
