@@ -1,10 +1,7 @@
-import { render, screen, waitFor } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import App from './App';
 import React from 'react'
 import '@testing-library/jest-dom';
-import { getJokes } from '../../APIcalls/Get-Jokes';
-jest.mock('../../APIcalls/Get-Jokes');
-import { BrowserRouter } from "react-router-dom";
 
 
 let jokes = [
@@ -19,19 +16,6 @@ let jokes = [
     ]
   }
 ]
-
-describe('componentDidMount', () => {
-  it('should render jokes', async () => {
-    getJokes.mockResolvedValueOnce(jokes)
-    render(
-      <BrowserRouter>
-        <App jokes={jokes} likes={jokes}/>
-      </BrowserRouter>
-    )
-    const funnyJoke = await waitFor(() => screen.getByText('funny'))
-    expect(funnyJoke).toBeInTheDocument()
-  });
-})
 
 describe('Main', () => {
   describe('Components', () => {

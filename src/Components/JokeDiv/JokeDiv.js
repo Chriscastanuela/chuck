@@ -1,5 +1,7 @@
 import './Joke-Div.scss'
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
+
 
 export default function JokeDiv(props) {
     let joke = props.decodeHtml(props.theJoke);
@@ -24,3 +26,11 @@ export default function JokeDiv(props) {
         )
     }
 }
+
+JokeDiv.propTypes = {
+    decodeHtml: PropTypes.func,
+    theJoke: PropTypes.string,
+    isMain: PropTypes.bool,
+    like: PropTypes.func,
+    dislike: PropTypes.func,
+};
