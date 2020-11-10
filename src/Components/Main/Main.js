@@ -38,3 +38,9 @@ export default function Main(props) {
     }
 }
 
+Main.propTypes = {
+    decodeHtml: PropTypes.func,
+    jokes: PropTypes.array,
+    like: PropTypes.func,
+    isMain: PropTypes.bool,
+};
