@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 import './App.scss';
 
-import { getJokes } from '../../APIcalls/Get-Jokes';
+import request from '../../APIcalls/Get-Jokes';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header'
 import Main from '../Main/Main'
@@ -20,8 +20,9 @@ export default class App extends Component {
   }
   componentDidMount() {
     setTimeout(() => {
-      getJokes()
+      request.getJokes()
       .then(res => (
+        console.log(res),
         this.setState({jokes: [...[res]]}),
         console.log(this.state)
       ) )

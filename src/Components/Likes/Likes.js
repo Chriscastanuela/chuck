@@ -43,7 +43,7 @@ export default function Likes(props) {
     }
 }
 
-Main.propTypes = {
+Likes.propTypes = {
     decodeHtml: PropTypes.func,
     jokes: PropTypes.array,
     dislike: PropTypes.func,

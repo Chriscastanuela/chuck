@@ -1,26 +1,38 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import App from './App';
 import React from 'react'
 import '@testing-library/jest-dom';
+import request from '../../APIcalls/Get-Jokes';
 
 
-let jokes = [
-  {
+it('should receive a resolved promise', async () => {
+  request.getJokes = jest.fn()
+  request.getJokes.mockResolvedValue(
+    {
+      value: [
+        {
+          joke: 'funny'
+        }
+      ]
+    }
+  )
+  render(<App jokes={[{
     value: [
-      {
-        joke: 'funny'
-      },
       {
         joke: 'funny'
       }
     ]
-  }
-]
+  }]}/>);
+  await waitFor(() => {
+    expect(request.getJokes).toHaveBeenCalledTimes(1)
+  })
+})
+
 
 describe('Main', () => {
   describe('Components', () => {
     it('1. should have a header', () => {
-      render(<App jokes={jokes} likes={jokes}/>);
+      render(<App />);
       
       expect(screen.getByText('Chuck Norris Jokes for the Bored')).toBeInTheDocument();
       expect(screen.getByText('👍')).toBeInTheDocument();
