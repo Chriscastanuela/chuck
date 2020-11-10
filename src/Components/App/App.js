@@ -1,9 +1,9 @@
 import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 import './App.scss';
 
-import { getJokes } from '../../APIcalls/Get-Jokes';
+import request from '../../APIcalls/Get-Jokes';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header'
 import Main from '../Main/Main'
@@ -20,8 +20,12 @@ export default class App extends Component {
   }
   componentDidMount() {
     setTimeout(() => {
-      getJokes()
-      .then(res => this.setState({jokes: [...[res]]}))
+      request.getJokes()
+      .then(res => (
+        console.log(res),
+        this.setState({jokes: [...[res]]}),
+        console.log(this.state)
+      ) )
     }, 100)
   }
   decodeHtml = (html) => {
@@ -38,7 +42,7 @@ export default class App extends Component {
   dislike = (joke) => {
     let newArr = [];
     this.state.likes.forEach(i => {
-      if (i != joke) {
+      if (i !== joke) {
         newArr.push(i)
       }
     })
