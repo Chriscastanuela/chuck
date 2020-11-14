@@ -2,7 +2,7 @@
 # Chuck Norris
 > A js project by Chris Castanuela
 
-<!-- [Link to Deployed Site]() -->
+[Link to Deployed Site](https://chriscastanuela.github.io/chuck/)
 
 # Contents 
 
