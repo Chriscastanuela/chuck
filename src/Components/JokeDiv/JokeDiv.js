@@ -11,6 +11,7 @@ export default function JokeDiv(props) {
                 <div className='joke-div'>
                     <input type="button" className='thumbs' value='👍' onClick={() => props.like(joke)} 
                     />
+                    <p className='number'>{props.theKey}</p>
                     <p className='the-joke'>{joke}</p>
                 </div>
             </section>

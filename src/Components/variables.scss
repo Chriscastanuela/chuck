@@ -16,4 +16,9 @@
     padding: 5px;
     overflow-y: scroll;
 }
-//
+
+@mixin thumbsAndNumber {
+    display: contents;
+    display: inline-block;
+    margin-top: 1vw;
+}

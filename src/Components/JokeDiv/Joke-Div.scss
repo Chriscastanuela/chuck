@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 .joke {
     place-self: center;
 }
@@ -14,11 +16,19 @@
     box-shadow: -1px 1px 13px 0px #282D33;
 }
 .thumbs {
-    display: contents;
-    display: inline-block;
-    margin-top: 1vw;
+    @include thumbsAndNumber;
     margin-left: 1vw;
+    font-size: x-large;
     cursor: pointer;
+}
+.number {
+    @include thumbsAndNumber;
+    margin-right: 1vw;
+    width: auto;
+    float: right;
+    background-color: #FFD54C;
+    padding: 3px 7px 3px 7px;
+    border-radius: 10%;
 }
 .the-joke {
     color: #DEEEEC;

@@ -34,21 +34,24 @@ export default class App extends Component {
     return areaElement.value;
   }
   like = (joke) => {
-    setTimeout(() => {
+    setTimeout(() =>  {
       this.setState({likes: [...this.state.likes, joke]});
-      console.log(this.state);
-    }, 0)
+      setTimeout(() =>  {
+        localStorage.setItem('likes', JSON.stringify(this.state.likes));
+      }, 100)
+    }, 100);
   }
   dislike = (joke) => {
     let newArr = [];
-    this.state.likes.forEach(i => {
+    let theLikes = JSON.parse(localStorage.getItem('likes'));
+    console.log(theLikes)
+    theLikes.forEach(i => {
       if (i !== joke) {
         newArr.push(i)
       }
     })
-    setTimeout(() => {
-      this.setState({likes: newArr});
-    }, 0)
+    this.setState({likes: newArr});
+    localStorage.setItem('likes', JSON.stringify(newArr));
   }
   render() {
     return (

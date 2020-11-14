@@ -1,5 +1,5 @@
 import './Likes.scss'
-import React, { Component } from 'react'
+import React from 'react'
 import chuck from '../../Assets/chuck.jpeg';
 import JokeDiv from '../JokeDiv/JokeDiv';
 import PropTypes from 'prop-types';
@@ -7,8 +7,9 @@ import PropTypes from 'prop-types';
 
 export default function Likes(props) {
     let theKey = 0;
-    if (props.likes.length > 0) {
-        let sortedJokes = props.likes.sort((a, b) => {
+    let likes = JSON.parse(localStorage.getItem('likes'));
+    if (likes.length > 0) {
+        let sortedJokes = likes.sort((a, b) => {
             return a.localeCompare(b)
         });
         return (
@@ -18,7 +19,7 @@ export default function Likes(props) {
                         theKey += 1;
                         return (
                             <JokeDiv
-                            key={theKey} 
+                            key={theKey}
                             decodeHtml={props.decodeHtml}
                             theJoke={element}
                             dislike={props.dislike}
@@ -29,6 +30,28 @@ export default function Likes(props) {
                 }
             </div>
         )
+    // if (props.likes.length > 0) {
+    //     let sortedJokes = props.likes.sort((a, b) => {
+    //         return a.localeCompare(b)
+    //     });
+    //     return (
+    //         <div className='likes-section'>
+    //             {
+    //                 sortedJokes.map(element => {
+    //                     theKey += 1;
+    //                     return (
+    //                         <JokeDiv
+    //                         key={theKey} 
+    //                         decodeHtml={props.decodeHtml}
+    //                         theJoke={element}
+    //                         dislike={props.dislike}
+    //                         isLikes={props.isLikes}
+    //                         />
+    //                     )
+    //                 })
+    //             }
+    //         </div>
+    //     )
     } else {
         return  (
             <div>
