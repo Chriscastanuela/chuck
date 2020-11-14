@@ -1,6 +1,6 @@
 let request = {
     getJokes: () => {
-        return fetch(`http://api.icndb.com/jokes/random/558?exclude=[explicit]`)
+        return fetch(`https://api.icndb.com/jokes/random/558?exclude=[explicit]`)
         .then(res => res.json())
     }
 }
