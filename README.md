@@ -1,6 +1,6 @@
-### [Link to Deployed Site](https://chriscastanuela.github.io/chuck/)
 <a name="mainContents"></a>
 # Chuck Norris
+## [Link to Deployed Site](https://chriscastanuela.github.io/chuck/)
 > A js project by Chris Castanuela
 
 # Contents 
