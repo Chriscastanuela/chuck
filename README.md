@@ -1,4 +1,4 @@
-[Link to Deployed Site](https://chriscastanuela.github.io/chuck/)
+### [Link to Deployed Site](https://chriscastanuela.github.io/chuck/)
 <a name="mainContents"></a>
 # Chuck Norris
 > A js project by Chris Castanuela
@@ -6,6 +6,7 @@
 # Contents 
 
 * [About](#about)
+* [Welcomed Contributions](#wc)
 * [Built With](#bw)
 * [Successes](#successes)
 * [What I Enjoyed the Most](#wwetm)
@@ -19,6 +20,17 @@
 <ul>
     <li>The Chuck Norris Project is a solo project that consisted of creating a React application using any API of my choosing. I chose to use an API that contains over 500 Chuck Norris jokes</li>
     <li>I was given full creative control with the project's design</li>
+</ul>
+
+# Welcomed Contributions
+
+<a name="wc"></a>
+
+[Back to Main](#mainContents)
+
+<ul>
+    <li>Media queries for responsiveness</li>
+    <li>"Share to social media" functionality</li>
 </ul>
 
 # Built With
