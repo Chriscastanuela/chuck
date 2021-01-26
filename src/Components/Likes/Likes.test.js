@@ -12,7 +12,7 @@ let mockedDislike = jest.fn();
 
 describe('No likes', () => {
     describe('Render', () => {
-        it.skip('1. should render an image and a header', () => {
+        it('1. should render an image and a header', () => {
             render(
                 <BrowserRouter>
                     <Likes 

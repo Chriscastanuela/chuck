@@ -14,6 +14,7 @@
     place-self: center;
     background-color: #3b8b85;
     box-shadow: -1px 1px 13px 0px #282D33;
+    margin: 5px;
 }
 .thumbs {
     @include thumbsAndNumber;
