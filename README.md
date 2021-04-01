@@ -65,15 +65,6 @@ The site is able to do the following:
     <li>Utilize React Router to go to different pages, application goes to homepage when undefined routes are attempted.</li>
 </ul>
 
-# What I Enjoyed The Most
-
-<a name="wwetm"></a>
-
-[Back to Main](#mainContents)
-<ul>
-    <li>This was a fun project to make, I would often find myself distracted by reading all of the jokes.</li>
-</ul>
-
 ### Link to the Author
 
 <a name="ltta"></a>
