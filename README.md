@@ -5,11 +5,7 @@
 
 # Contents 
 
-* [About](#about)
-* [Built With](#bw)
-* [Successes](#successes)
-* [What I Enjoyed the Most](#wwetm)
-* [Link to the Author](#ltta)
+[About](#about) | [Built With](#bw) | [Successes](#successes) | [What I Enjoyed the Most](#wwetm) | [Link to the Author](#ltta)
 
 # About 
 
@@ -43,13 +39,12 @@
 <a name="i"></a>
 
 [Back to Main](#mainContents)
-<ul>
-    <li>Open your terminal</li>
-    <li>Run `git clone git@github.com:Chriscastanuela/chuck.git chris-binary`</li>
-    <li>Run `cd chris-binary`</li>
-    <li>Run `npm i`</li>
-    <li>Run `npm start`</li>
-</ul>
+
+Open your terminal, run the following commands:
+* `git clone git@github.com:Chriscastanuela/chuck.git chris-binary`
+* `cd chris-binary`
+* `npm i`
+* `npm start`
 
 # Wireframe
 <img width="1393" alt="Screen Shot 2020-11-10 at 7 22 53 AM" src="https://user-images.githubusercontent.com/62910433/98686241-8e1d9e80-2325-11eb-9c01-eaaa6d347165.png">
