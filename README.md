@@ -5,7 +5,7 @@
 
 # Contents 
 
-[About](#about) | [Built With](#bw) | [Successes](#successes) | [What I Enjoyed the Most](#wwetm) | [Link to the Author](#ltta)
+[About](#about) | [Built With](#bw) | [Successes](#successes) | [Link to the Author](#ltta)
 
 # About 
 
