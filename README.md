@@ -3,11 +3,11 @@
 <a name="mainContents"></a>
 # Chuck Norris
 ## [Link to Deployed Site](https://chriscastanuela.github.io/chuck/)
-> A js project by Chris Castanuela
+> By [Christopher Castanuela](https://chriscastanuela.github.io/cac/)
 
 # Contents 
 
-[About](#about) | [Built With](#bw) | [Successes](#successes) | [Link to the Author](#ltta)
+[About](#about) | [Built With](#bw) | [Successes](#successes)
 
 # About 
 
@@ -66,15 +66,6 @@ The site is able to do the following:
     <li>Render a thumbs down button on each div when navigated to the "Likes" page and use said button to remove a joke from the Likes list</li>
     <li>Utilize React Router to go to different pages, application goes to homepage when undefined routes are attempted.</li>
 </ul>
-
-### Link to the Author
-
-<a name="ltta"></a>
-
-[Back to Main](#mainContents)
-
-> Christopher Castanuela [here](https://chriscastanuela.github.io/cac/)
-
 
 <!-- ### Deployment
 
