@@ -1,3 +1,5 @@
+<!--npm run build && npm run deploy -->
+
 <a name="mainContents"></a>
 # Chuck Norris
 ## [Link to Deployed Site](https://chriscastanuela.github.io/chuck/)
